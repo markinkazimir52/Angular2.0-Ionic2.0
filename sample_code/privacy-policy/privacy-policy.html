@@ -1,0 +1,55 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar class="navbar-about">
+  <button (click)="goBack()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </button>
+  <ion-title>
+  </ion-title>
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content pg-content-privacy">
+  <ion-row id="pg-content-info" class="pg-content-row pg-upper-info-shadow" center>
+    <ion-col id="pg-content-info" class="pg-content-col" center>
+      <p id="pg-content-privacy-title" class="pg-content-p">Privacy Policy</p>
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="pg-content-row" center>
+    <ion-col id="pg-content-main" class="pg-content-col pg-content-card" center>
+      <ion-card>
+        <ion-card-content class="page privacy-policy main" hasHeader="true" scroll="true">
+          <ion-list>
+            <div [innerHTML]="privacyHTML">
+            </div>
+            <!-- <p ion-item *ngFor="let item of quote['items']">
+              {{item.note}}
+            </p> -->
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer pg-footer-privacy">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <img id="pg-footer-logo" class="pg-footer-img" src="img/generic-company-logo-new-version.svg" (click)="navToAboutModal($event)" center>
+    </ion-col>
+  </ion-row>
+</ion-footer>

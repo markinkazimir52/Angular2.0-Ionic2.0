@@ -1,0 +1,137 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar>
+  <ion-title>
+  </ion-title>
+  <ion-buttons end>
+    <button (click)="saveTapped($event, 'prev')">
+      Save
+      <i class="share-icon fa fa-share-square" name="share"></i>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" scroll="true" class="pg-content">
+  <ion-row id="pg-content-info" class="pg-content-row" center>
+    <ion-col id="pg-content-info" class="pg-content-col question-card" center>
+      <div id="pg-content-header">
+        <p id="question-info-name" class="pg-content-info-p">{{question.name}}</p>        
+        <p *ngIf="question.description != ''" id="question-info-description" class="pg-content-info-p">{{question.description}}</p>
+        <p *ngIf="question.text != ''" id="question-info-text" class="pg-content-info-p">{{question.text}}</p>
+        <!--
+        <span *ngIf="question.about.description != ''" id="question-info-about" [ngSwitch]="question.about.type">
+          <p id="question-about" *ngSwitchWhen="'danger'" danger class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchWhen="'dark'" dark class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchWhen="'light'" light class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchWhen="'secondary'" secondary class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchWhen="'primary'" primary class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchDefault class="pg-content-info-p">{{question.about.description}}</p>
+        </span>
+        -->
+      </div>      
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="pg-content-row" center>
+    <ion-col id="pg-content-main" class="pg-content-col pg-content-card" center>
+      <!-- <div id="pg-content-main" class="pg-content-card question-card-text" *ngIf="page_type == 'text'">
+        <div id="pg-content-main-answers" class="pg-content-card-list"> -->
+      <ion-card id="pg-content-main" class="pg-content-card question-card-text" *ngIf="page_type == 'text'">
+        <ion-list id="pg-content-main-answers" class="pg-content-card-list">
+          <div id="pg-content-main-answer-item" [class.answer-button]='item.uiHelper.isButton' [class.answer-label]='item.uiHelper.hasTextArea' *ngFor="let item of question.suggestedAnswerList; let isLast=last">
+            <button list-item full clear icon-left *ngIf="item.uiHelper.isButton && !item.uiHelper.hasTextArea && !item.uiHelper.hasImages && !item.uiHelper.hasFile" [id]="'pg-content-main-answer-' + item.name | lowercase" class="pg-content-main-answer hide-on-keyboard-open" (click)="itemTapped($event, item)">
+              <span *ngIf="item.uiHelper.hasIcon" [class]="'fa fa-fw ' + item.icon"></span>
+              {{item.name}}
+              <label list-item item-input hidden id="pg-content-main-answer-input">
+                <span input-label *ngIf=item.optionalInput></span>
+                <input month [(ngModel)]="item.name" placeholder="item.placeholder">
+              </label>
+            </button>
+            
+            <label list-item full clear icon-left *ngIf="item.uiHelper.hasImages" [id]="'pg-content-main-answer-' + item.name | lowercase" class="pg-content-main-answer hide-on-keyboard-open button-inner" [class.isUploaded]="uploadImage">
+              <span *ngIf="item.uiHelper.hasIcon" [class]="'fa fa-fw ' + item.icon"></span> 
+              {{item.name}}
+              <input type="file" (change)="handleUpload($event, item)">
+            </label>
+
+            <label list-item full clear icon-left *ngIf="item.uiHelper.hasFile" [id]="'pg-content-main-answer-' + item.name | lowercase" class="pg-content-main-answer hide-on-keyboard-open button-inner" [class.isUploaded]="uploadFile">
+              <span *ngIf="item.uiHelper.hasIcon" [class]="'fa fa-fw ' + item.icon"></span> 
+              {{item.name}}
+              <input type="file" (change)="handleUpload($event, item)">
+            </label>
+
+            <div class="question-card-textarea" *ngIf="item.uiHelper.hasTextArea">
+              <label class="item item-input">
+                Please include your notes below.
+              </label>
+              <textarea id="textarea" [(ngModel)]="note" placeholder="Tap here to type..."></textarea>
+            </div>
+          </div>
+        </ion-list>
+      </ion-card>
+        <!-- </div>
+      </div> -->
+      <ion-card id="pg-content-main" class="pg-content-card question-card-datetime" *ngIf="page_type == 'date_time'">
+        <ion-list id="pg-content-main-answers" class="pg-content-card-list">
+          <div id="pg-content-main-answer-item" class="question-card-time" *ngFor="let item of question.suggestedAnswerList; let isLast=last">
+            <ion-item *ngIf="item.uiHelper.hasTime">
+              <ion-label>Time:</ion-label>
+              <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="myDate"></ion-datetime>
+            </ion-item>
+          </div>
+          <div id="pg-content-main-answer-item" class="question-card-date" *ngFor="let item of question.suggestedAnswerList; let isLast=last">
+            <ion-item *ngIf="item.uiHelper.hasDate">
+              <ion-label>Date:</ion-label>
+              <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate"></ion-datetime>
+            </ion-item>
+          </div>
+        </ion-list>
+      </ion-card>
+      <div id="pg-question-card-buttons" class="question-card-buttons" *ngIf="page_type == 'multi_choice'">
+        <ion-list id="pg-content-main-answers" class="pg-content-card-list">
+          <div id="pg-content-main-answer-item" *ngFor="let item of question.suggestedAnswerList; let isLast=last">
+            <button list-item full clear icon-left *ngIf="item.uiHelper.isButton" [id]="'pg-content-main-answer-' + item.name | lowercase" class="pg-content-main-answer" [class.clicked]="item.isClicked" (click)="itemTapped($event, item);">
+              <!-- <span *ngIf="item.uiHelper.hasIcon" [class]="'fa fa-fw ' + item.icon"></span> -->
+              <span>{{item.name}}</span>
+              <span input-label class="optional-input-text" *ngIf=item.optionalInputText>({{item.optionalInputText | ellipsis: 16}})</span>
+              <!-- <label list-item item-input hidden id="pg-content-main-answer-input">
+                <span input-label *ngIf=item.optionalInput></span>
+                <input month [(ngModel)]="item.name" placeholder="item.placeholder">
+              </label> -->
+            </button>
+          </div>
+        </ion-list>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer question-footer">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <button id="button-help" fab fab-left fab-bottom (click)="helpTapped($event)">
+        <span class="pg-footer-help fa fa-fw fa-question-circle"></span>
+      </button>
+      <button id="button-trash" fab fab-center fab-bottom (click)="trashTapped($event)">
+        <span class="pg-footer-trash fa fa-fw fa-trash"></span>
+      </button>
+      <button id="button-submit" fab fab-right fab-bottom (click)="saveTapped($event, 'next')">
+        <span class="pg-footer-submit fa fa-fw fa-step-forward"></span>
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

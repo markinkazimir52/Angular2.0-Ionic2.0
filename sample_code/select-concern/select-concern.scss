@@ -1,0 +1,174 @@
+ion-buttons.back-button-about {
+	order: 1;
+}
+
+ion-card-content.page.select-concern.main > ion-list ion-label {
+  white-space: normal;
+}
+
+ion-content.pg-content.pg-content-select-concern {
+	p#pg-content-select-concern-title {
+		color: #ffde2f;
+	    font-size: 2rem;
+	    font-weight: lighter;
+
+	    @media screen and (min-width: 768px) {
+	    	font-size: 26px;
+	    }
+	}
+
+	p#pg-content-select-concern-description {
+		font-size: 1.1rem;
+		font-weight: lighter;
+		padding: 0 8%;
+
+		@media screen and (min-width: 768px) {
+			font-size: 14px;
+			padding: 0 170px;
+		}
+	}
+
+	ion-card {
+		opacity: 0.9; 
+		
+		ion-card-content {
+			height: 100%;
+			padding: 13px;
+			position: relative;
+
+			ion-list {
+				.item {
+					border: none;
+					padding: 0;
+					min-height: 4rem;
+
+					@media screen and (min-width: 768px) {
+						min-height: 40px;
+					}
+				}
+				.item:first-child {
+					border-top: none;
+				}
+				.item:last-child {
+					border-bottom: none;
+				}
+
+				.item-inner {
+					border-bottom: none;
+				}
+
+				ion-label.select-concern-select-label {
+					font-size: 1.7rem;
+					text-align: left;
+					margin: 5px;
+
+					@media screen and (min-width: 768px) {
+						width: 100%;
+						float: left;
+						font-size: 22px;
+					}
+				}
+
+				ion-item.item-select {
+					@media screen and (min-width: 768px) {
+						width: 100%;
+						float: left;
+						display: block;
+						min-height: 10px;
+					}
+				}
+
+				ion-select {
+					max-width: 100%;
+					width: 100%;
+					border-bottom: 1px solid #c8c7cc;
+					padding: 5px;
+				}
+
+				ion-input {
+					border-bottom: 1px solid #c8c7cc;
+
+					.text-input {
+						margin: 5px;
+					}
+				}
+			}
+
+			ion-list + ion-list {
+				margin-top: 20px;
+				padding-top: 10px;
+
+				@media screen and (min-width: 768px) {
+					float: left;
+					width: 100%;
+					margin-top: 15px;
+					padding-top: 5px;
+				}
+			}
+
+			button.button.text-input-clear-icon {
+				height: 3rem;
+				border-radius: 10px;
+			}
+
+			button.button.update-concern-button {
+				height: 3.5rem;
+				border-radius: 10px;
+				text-transform: capitalize;
+				position: relative;
+				width: 60%;
+				border: 2px solid $tranquil;
+				background: transparent;
+				color: $tranquil;
+				box-shadow: none;
+				left: 0;
+				right: 0;
+				margin: 2rem auto;
+				display: inline-block;
+				font-size: 1.4rem;
+
+				@media screen and (min-width: 481px) and (max-width: 767px) {
+					position: relative;
+					margin: 1rem auto;
+					height: 3.8rem;
+				}
+
+				@media screen and (min-width: 768px) {
+					height: 35px;
+				}
+			}
+		}
+	}
+}
+
+ion-footer.pg-footer-select-concern {
+	.button-fab {
+		width: 4rem;
+	    height: 4rem;
+	    line-height: 4rem;
+	    margin: 0;
+	    bottom: 1rem;
+	    padding: 0;
+
+	    @media screen and (min-width: 768px) {
+	    	width: 46.69px;
+	    	height: 46.69px;
+	    	line-height: 46.69px;
+	    	bottom: 10px;
+	    }
+	}
+
+	.fa-fw {
+		font-size: 20px;
+	}
+
+	img#pg-footer-logo {
+		max-width: 40%;
+		bottom: 1.4rem;
+
+		@media screen and (min-width: 768px) {
+			bottom: 15px;
+			max-width: 15rem;
+		}
+	}
+}

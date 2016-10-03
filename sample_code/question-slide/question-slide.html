@@ -1,0 +1,225 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">    
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar hideBackButton="true">
+  <ion-title>
+  </ion-title>
+  <ion-buttons start>
+    <button (click)="backTapped()">
+      <i class="share-icon fa fa-chevron-left" name="share"></i>
+      Back
+    </button>
+  </ion-buttons>
+  <ion-buttons end>
+    <button (click)="saveTapped()">
+      Done
+      <i class="share-icon fa fa-paper-plane" name="share"></i>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content question-slide-page">
+  <ion-row id="pg-content-info" class="pg-content-row" center>
+    <ion-col id="pg-content-info" class="pg-content-col question-slide-pg-content" center>
+      <ion-row id="question-grid-progressbar" class="pg-content-row" center>
+        <div class="pg-content-progress-area">
+          <div class="meter yellow nostripes">
+            <span [style.width]="progress + '%'"></span>
+          </div>
+          <div class="progress-labels">
+            <span fab fab-left>basic</span>
+            <span fab-center>good</span>
+            <span fab-right>great</span>
+          </div>
+        </div>        
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="question-slide-pg-content-row" center>
+    <ion-col id="pg-content-main-center" class="pg-content-col question-slide-pg-content-col" center (swipe)="slideCards($event)">
+      <ion-card class="pg-content-card" *ngIf="question != ''" [class.slide-next]="isNext" [class.slide-prev]="isPrev">
+        <div class="question-header">
+          <h1 class="headline">{{question.display.query}}</h1>
+          <p class="short-description">{{question.display.instruction}}</p>
+        </div>
+        <div class="answer-list question-card-text" *ngIf="question.metadata.answersType == 'Prose'">
+          <ion-list id="pg-content-main-answers" class="pg-content-card-list">
+            <div id="pg-content-main-answer-item" class="answer-button" *ngIf="question.attachments.acceptedTypes.length > 0">
+              <label list-item full clear icon-left id="pg-content-main-answer-image" class="pg-content-main-answer hide-on-keyboard-open button-inner" [class.isUploaded] = "uploadedImage">
+                <span class="fa fa-fw fa-camera"></span> 
+                Add Photos
+                <input type="file" (change)="handleUpload($event, 'image')">
+              </label>
+            </div>
+            <div id="pg-content-main-answer-item" class="answer-button" *ngIf="question.attachments.acceptedTypes.length > 0">
+              <button list-item full clear icon-left id="pg-content-main-answer-audio" class="pg-content-main-answer hide-on-keyboard-open" (click)="itemTapped($event, item, 'audio')">
+                <span class="fa fa-fw fa-microphone"></span>
+                Add Audio
+              </button>
+            </div>
+            <div id="pg-content-main-answer-item" class="answer-button" *ngIf="question.attachments.acceptedTypes.length > 0">
+              <button list-item full clear icon-left id="pg-content-main-answer-video" class="pg-content-main-answer hide-on-keyboard-open" (click)="itemTapped($event, item, 'video')">
+                <span class="fa fa-fw fa-video-camera"></span>
+                Add Video
+              </button>
+            </div>
+            <div id="pg-content-main-answer-item" class="answer-button" *ngIf="question.attachments.acceptedTypes.length > 0">
+              <label list-item full clear icon-left id="pg-content-main-answer-file" class="pg-content-main-answer hide-on-keyboard-open button-inner" [class.isUploaded] = "uploadedFile">
+                <span class="fa fa-fw fa-file"></span> 
+                Add File
+                <input type="file" (change)="handleUpload($event, 'file')">
+              </label>
+            </div>
+            <div id="pg-content-main-answer-item" class="answer-label">
+              <div class="question-card-textarea">
+                <textarea id="textarea" [(ngModel)]="question.answers[0].value.remark" placeholder="Tap here to type..."></textarea>
+              </div>
+            </div>
+          </ion-list>              
+        </div>
+        <div class="answer-list question-card-datetime" *ngIf="question.metadata.answersType == 'DateTime'">
+          <ion-list id="pg-content-main-answers" class="pg-content-card-list">
+            <div id="pg-content-main-answer-item" class="question-card-time">
+              <ion-item [class.isSelected] = "myTime">
+                <ion-label>Time:</ion-label>
+                <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="myTime"></ion-datetime>
+              </ion-item>
+            </div>
+            <div id="pg-content-main-answer-item" class="question-card-date">
+              <ion-item [class.isSelected] = "myDate">
+                <ion-label>Date:</ion-label>
+                <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate"></ion-datetime>
+              </ion-item>
+            </div>
+          </ion-list>
+        </div>
+        <div class="answer-list question-card-buttons" *ngIf="question.metadata.answersType == 'Multiple' || question.metadata.answersType == 'Single'">
+          <ion-list id="pg-content-main-answers" class="pg-content-card-list">
+            <div id="pg-content-main-answer-item" *ngFor="let item of question.answers; let isLast=last">
+              <button list-item full clear icon-left [id]="'pg-content-main-answer-' + item.uuId | lowercase" class="pg-content-main-answer" [class.clicked]="item.value.selected" (click)="itemTapped($event, item);">
+                <span>{{item.choice}}</span>
+                <span input-label class="optional-input-text" *ngIf=item.optionalInput.remark>({{item.optionalInput.remark | ellipsis: 16}})</span>
+              </button>
+            </div>
+          </ion-list>
+        </div>            
+      </ion-card>      
+
+
+    <!-- <ion-col id="pg-content-main-center" class="pg-content-col question-slide-pg-content-col" center> -->
+      <!-- <ion-spinner name="bubbles"></ion-spinner> -->
+      <!-- <ion-slides #slides (ionDidChange)="slideNext($event)">
+        <ion-slide *ngFor="let question of questions; let i=index">
+          <ion-card class="pg-content-card" *ngIf="question == ''"></ion-card>
+          <ion-card class="pg-content-card" *ngIf="question != ''">
+            <div class="question-header">
+              <h1 class="headline">{{question.display.query}}</h1>
+              <p class="short-description">{{question.display.instruction}}</p>
+            </div>
+            <div class="answer-list question-card-text" *ngIf="question.metadata.answersType == 'Prose'">
+              <ion-list id="pg-content-main-answers" class="pg-content-card-list">
+                <div id="pg-content-main-answer-item" class="answer-button" *ngIf="question.attachments.acceptedTypes.length > 0">
+                  <label list-item full clear icon-left id="pg-content-main-answer-image" class="pg-content-main-answer hide-on-keyboard-open button-inner" [class.isUploaded]="uploadedImage">
+                    <span class="fa fa-fw fa-camera"></span> 
+                    Add Images
+                    <input type="file" (change)="handleUpload($event, 'image')">
+                  </label>
+                </div>
+                <div id="pg-content-main-answer-item" class="answer-button" *ngIf="question.attachments.acceptedTypes.length > 0">
+                  <button list-item full clear icon-left id="pg-content-main-answer-audio" class="pg-content-main-answer hide-on-keyboard-open" (click)="itemTapped($event, item, 'audio')">
+                    <span class="fa fa-fw fa-microphone"></span>
+                    Add Audio
+                  </button>
+                </div>
+                <div id="pg-content-main-answer-item" class="answer-button" *ngIf="question.attachments.acceptedTypes.length > 0">
+                  <button list-item full clear icon-left id="pg-content-main-answer-video" class="pg-content-main-answer hide-on-keyboard-open" (click)="itemTapped($event, item, 'video')">
+                    <span class="fa fa-fw fa-video-camera"></span>
+                    Add Video
+                  </button>
+                </div>
+                <div id="pg-content-main-answer-item" class="answer-button" *ngIf="question.attachments.acceptedTypes.length > 0">
+                  <label list-item full clear icon-left id="pg-content-main-answer-file" class="pg-content-main-answer hide-on-keyboard-open button-inner" [class.isUploaded]="uploadedFile">
+                    <span class="fa fa-fw fa-file"></span> 
+                    Add File
+                    <input type="file" (change)="handleUpload($event, 'file')">
+                  </label>
+                </div>
+                <div id="pg-content-main-answer-item" class="answer-label">
+                  <div class="question-card-textarea">
+                    <textarea id="textarea" [(ngModel)]="question.answers[0].value.remark" placeholder="Tap here to type..."></textarea>
+                  </div>
+                </div>
+              </ion-list>              
+            </div>
+            <div class="answer-list question-card-datetime" *ngIf="question.metadata.answersType == 'DateTime'">
+              <ion-list id="pg-content-main-answers" class="pg-content-card-list">
+                <div id="pg-content-main-answer-item" class="question-card-time">
+                  <ion-item>
+                    <ion-label>Time:</ion-label>
+                    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="myTime"></ion-datetime>
+                  </ion-item>
+                </div>
+                <div id="pg-content-main-answer-item" class="question-card-date">
+                  <ion-item>
+                    <ion-label>Date:</ion-label>
+                    <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate"></ion-datetime>
+                  </ion-item>
+                </div>
+              </ion-list>
+            </div>
+            <div class="answer-list question-card-buttons" *ngIf="question.metadata.answersType == 'Multiple' || question.metadata.answersType == 'Single'">
+              <ion-list id="pg-content-main-answers" class="pg-content-card-list">
+                <div id="pg-content-main-answer-item" *ngFor="let item of question.answers; let isLast=last">
+                  <button list-item full clear icon-left [id]="'pg-content-main-answer-' + item.uuId | lowercase" class="pg-content-main-answer" [class.clicked]="item.value.selected" (click)="itemTapped($event, item);">
+                    <span>{{item.choice}}</span>
+                    <span input-label class="optional-input-text" *ngIf=item.optionalInput.remark>({{item.optionalInput.remark | ellipsis: 16}})</span>
+                  </button>
+                </div>
+              </ion-list>
+            </div>            
+          </ion-card>
+        </ion-slide>        
+      </ion-slides> -->
+      <div class="swiper-container-horizontal">
+        <div class="swiper-pagination">
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+          <span class="swiper-pagination-bullet"></span>
+        </div>        
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer question-footer question-slide-footer">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <button id="pg-footer-help" fab fab-left fab-bottom (click)="helpTapped($event)">
+        <span class="pg-footer-help fa fa-fw fa-question-circle"></span>
+      </button>
+      <img id="pg-footer-logo" class="pg-footer-img" src="img/generic-company-logo-new-version.svg" (click)="navToAboutModal($event)" center>
+      <button id="button-trash" fab fab-right fab-bottom (click)="trashTapped($event)">
+        <span class="pg-footer-trash fa fa-fw fa-refresh"></span>
+      </button>
+      <!--
+      <button id="button-submit" fab fab-right fab-bottom (click)="nextTapped($event)">
+        <span class="pg-footer-submit fa fa-fw fa-share"></span>
+      </button>
+      -->
+    </ion-col>
+  </ion-row>
+</ion-footer>

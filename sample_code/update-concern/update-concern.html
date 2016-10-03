@@ -1,0 +1,71 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar>
+  <ion-title>
+  </ion-title>  
+  <ion-buttons class="update-concern-share-button" end>
+    <button (click)="doneButtonClicked($event)">
+      Done
+      <i class="share-icon fa fa-share-square-o" name="share"></i>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content pg-content-update-concern">
+  <ion-row id="pg-content-info" class="pg-content-row pg-upper-info-shadow" center>
+    <ion-col id="pg-content-info" class="pg-content-col" center>
+      <p id="pg-content-update-concern-title" class="pg-content-p">{{quote.title}}</p>
+      <p id="pg-content-update-concern-description" class="pg-content-p">{{quote.description}}</p>
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="pg-content-row" center>
+    <ion-col id="pg-content-main" class="pg-content-col" center>
+      <ion-card class="pg-content-concern-info">
+        <ion-card-content class="page update-concern main" hasHeader="true" scroll="true">
+          <ion-list class="concern-info-list">
+            <label id="squibit-id">Concern: <span>{{updateTipID}}</span></label>
+            <label id="name">Posted by: <span>[{{updateName}}]</span></label>
+            <label id="date">On: <span>{{updateDate}}</span></label>
+          </ion-list>
+          <ion-list class="concern-content">
+            {{updateBody}}
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="pg-content-update-message">
+        <ion-card-content class="page update-concern main" hasHeader="true" scroll="true">
+          <ion-label>Enter your update below.</ion-label>
+          <ion-item>
+            <ion-textarea placeholder="Type your message here..." [(ngModel)]="updateInput"></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer pg-footer-update-concern">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <button id="button-help" fab fab-left fab-bottom (click)="helpTapped($event)">
+        <span class="pg-footer-help fa fa-fw fa-question-circle"></span>
+      </button>
+      <img id="pg-footer-logo" class="pg-footer-img" src="img/generic-company-logo-new-version.svg" (click)="navToAboutModal($event)" center>
+    </ion-col>
+  </ion-row>
+</ion-footer>

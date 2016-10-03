@@ -1,0 +1,59 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar>
+  <ion-title>
+  </ion-title>
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content">
+  <ion-row id="pg-content-info" class="pg-content-row pg-upper-info-shadow" center>
+    <ion-col id="pg-content-info" class="pg-content-col topic-list" center>
+      <div id="pg-content-header">
+        <p id="question-info-name" class="pg-content-info-p">{{topicList.display.query}}</p>
+        <span id="question-info-about">         
+          <p id="question-about" class="pg-content-info-p">{{topicList.display.instruction}}</p>
+        </span>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="pg-content-row" center>
+    <ion-col id="pg-content-main-left" class="pg-content-col" width-5 center>
+    </ion-col>
+    <ion-col id="pg-content-main-center" class="pg-content-col" width-90 center>
+      <ion-row id="pg-content-main-center" class="pg-content-row center-buttons" center>
+        <!-- <button class="btn default-btn" *ngFor="let item of topicList.answers" (click)="itemTapped($event, item)" [class.selected]="item.choice == answeredTopic"> -->
+        <button class="btn default-btn" *ngFor="let item of topicList.answers" (click)="itemTapped($event, item)" [class.selected]="item.value.selected">
+          <div class="btn-content">
+            <i id="security-icon" class="btn-icon fa" [ngClass]="item.icon"></i>
+            <p class="btn-text">{{item.choice}}</p>
+          </div>
+        </button>
+      </ion-row>
+    </ion-col>
+    <ion-col id="pg-content-main-right" class="pg-content-col" width-5 center>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <p id="question-info-text" class="pg-content-info-p">{{topicList.display.help}}</p>
+    </ion-col>
+  </ion-row>
+</ion-footer>

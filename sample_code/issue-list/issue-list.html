@@ -1,0 +1,61 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar hideBackButton="true">
+  <ion-title>
+  </ion-title>  
+  <ion-buttons start>
+    <button (click)="backTapped()">
+      <i class="share-icon fa fa-chevron-left" name="share"></i>
+      Back
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content issue-list">
+  <ion-row id="pg-content-info" class="pg-content-row pg-upper-info-shadow" center>
+    <ion-col id="pg-content-info" class="pg-content-col" center>
+      <div id="pg-content-header">
+        <p id="question-info-name" class="pg-content-info-p">{{issueList.display.query}}</p>
+        <span id="question-info-about">         
+          <p id="question-about" class="pg-content-info-p">{{issueList.display.instruction}}</p>
+        </span>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="pg-content-row" center>
+    <ion-col id="pg-content-main" class="pg-content-col" center>
+      <div *ngFor="let group of groupedAnswers" class="groups">
+        <label class="group-label">{{group[0].category}}</label>
+        <ul class="item-list">
+          <li *ngFor="let item of group" class="item" (click)="itemTapped($event, item)" [class.selected]="item.value.selected">
+            <i class="btn-icon fa" [ngClass]="item.icon"></i>
+            <span>{{item.choice}}</span>
+          </li>
+        </ul>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <p id="question-info-text" class="pg-content-info-p">{{issueList.display.help}}</p>
+    </ion-col>
+  </ion-row>
+</ion-footer>
