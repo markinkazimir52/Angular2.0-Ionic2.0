@@ -1,0 +1,51 @@
+{
+  "answerList" : [
+    {
+      "icon" : "fa-sticky-note",
+      "id":"73d49d43-8e74-44f9-9fd5-c794bd826a44",
+      "name":"Type your notes here...",
+      "shortId":"41A4Q55Xine",
+      "textarea":"asd",
+      "type":"primary",
+      "uiHelper": ""
+    }
+  ],
+  "headline" : "What"
+},
+{
+  "answerList" : [
+    {
+      "icon" : "fa-calendar-o",
+      "id":"e5ce03be-c154-46bb-bc9a-2a858f323ad2",
+      "myDate":"2016-07-15T16:56:28.914Z",
+      "name":"Date:",
+      "shortId":"VJsEQqqQo3e",
+      "type":"primary",
+      "uiHelper": ""
+    }
+  ],
+  "headline" : "When"
+},
+{
+  "answerList" : [
+    {
+      "icon" : "fa-archive",
+      "id":"25358346-5808-4b68-8efd-3113244871a5",
+      "isClicked":true,
+      "name":"Warehouse",
+      "shortId":"VyrEQc97inl",
+      "type":"primary",
+      "uiHelper": ""
+    },
+    {
+      "icon" : "fa-question",
+      "id":"25358346-5808-4b68-8efd-3113244871a5",
+      "isClicked":true,
+      "name":"I don't know",
+      "shortId":"417Nm957j3l",
+      "type":"primary",
+      "uiHelper": ""
+    },
+  ],
+  "headline" : "Where"
+}

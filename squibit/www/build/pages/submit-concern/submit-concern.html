@@ -1,0 +1,71 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar>
+  <ion-title>
+  </ion-title>  
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content pg-content-submit-concern">
+  <ion-row id="pg-content-info" class="pg-content-row" center>
+    <ion-col id="pg-content-info" class="pg-content-col" center>
+      <p id="pg-content-submit-concern-title" class="pg-content-p">{{quote.title}}</p>
+      <p id="pg-content-submit-concern-description" class="pg-content-p">{{quote.description}}</p>
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="pg-content-row" center>
+    <ion-col id="pg-content-main" class="pg-content-col pg-content-card" center>
+      <ion-card>
+        <ion-card-content class="page submit-concern main" hasHeader="true" scroll="true">
+          <ion-list>
+            <ion-item class="submit-toggle">
+              <ion-label>I want to submit this concern anonymously.</ion-label>
+              <ion-toggle energized [(ngModel)]="anonymous"></ion-toggle>
+            </ion-item>
+            <ion-label class="submit-concern-select-label">My affiliation with the company:</ion-label>
+            <ion-item>
+              <ion-select [(ngModel)]="affiliation" [alertOptions]="alertOptions">
+                <ion-option value="Employee">Employee</ion-option>
+                <ion-option value="Contractor">Contractor</ion-option>
+                <ion-option value="Vendor">Vendor</ion-option>
+                <ion-option value="Visitor">Visitor</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+          <ion-list [hidden]="anonymous">
+            <ion-label class="submit-concern-select-label">My contact information:</ion-label>
+            <ion-item><ion-input [(ngModel)]="name" placeholder="First & Last Name" clearInput></ion-input></ion-item>
+            <ion-item><ion-input type="email" [(ngModel)]="email" placeholder="Company email address" clearInput></ion-input></ion-item>
+            <ion-item><ion-input [(ngModel)]="phone" placeholder="Phone number & extension" clearInput></ion-input></ion-item>
+          </ion-list>
+          <button full class="disable-hover button button-default button-full" (click)="navToConcernReceived()">Submit this concern</button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer pg-footer-submit-concern">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <button id="button-help" fab fab-left fab-bottom (click)="helpTapped($event)">
+        <span class="pg-footer-help fa fa-fw fa-question-circle"></span>
+      </button>
+      <img id="pg-footer-logo" class="pg-footer-img" src="img/generic-company-logo-new-version.svg" (click)="navToAboutModal($event)" center>
+    </ion-col>
+  </ion-row>
+</ion-footer>

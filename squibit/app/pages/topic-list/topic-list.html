@@ -1,0 +1,82 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar>
+  <ion-title>
+  </ion-title>
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content">
+  <ion-row id="pg-content-info" class="pg-content-row" center>
+    <ion-col id="pg-content-info" class="pg-content-col topic-list" center>
+      <div id="pg-content-header">
+        <p id="question-info-name" class="pg-content-info-p">{{question.name}}</p>
+        <p *ngIf="question.description != ''" id="question-info-description" class="pg-content-info-p">{{question.description}}</p>        
+        <span *ngIf="question.about.description != ''" id="question-info-about" [ngSwitch]="question.about.type">
+          <p id="question-about" *ngSwitchWhen="'danger'" danger class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchWhen="'dark'" dark class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchWhen="'light'" light class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchWhen="'secondary'" secondary class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchWhen="'primary'" primary class="pg-content-info-p">{{question.about.description}}</p>
+          <p id="question-about" *ngSwitchDefault class="pg-content-info-p">{{question.about.description}}</p>
+        </span>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="pg-content-row" center>
+    <ion-col id="pg-content-main-left" class="pg-content-col" width-5 center>
+    </ion-col>
+    <ion-col id="pg-content-main-center" class="pg-content-col" width-90 center>
+      <ion-row id="pg-content-main-center" class="pg-content-row center-buttons" center>
+        <button class="btn default-btn" (click)="itemTapped($event, question.suggestedAnswerList[0])" [class.selected]="question.suggestedAnswerList[0].name == answeredTopic">
+          <div class="btn-content">
+            <i id="security-icon" class="btn-icon fa fa-shield"></i>
+            <p class="btn-text">Security</p>
+          </div>
+        </button>
+        <button class="btn default-btn" (click)="itemTapped($event, question.suggestedAnswerList[1])" [class.selected]="question.suggestedAnswerList[1].name == answeredTopic">
+          <div class="btn-content">
+            <i id="safety-icon" class="btn-icon fa fa-lock"></i>
+            <p class="btn-text">Safety</p>
+          </div>
+        </button>
+        <button class="btn default-btn" (click)="itemTapped($event, question.suggestedAnswerList[2])" [class.selected]="question.suggestedAnswerList[2].name == answeredTopic">
+          <div class="btn-content">
+            <i id="integrity-icon" class="btn-icon fa fa-balance-scale"></i>
+            <p class="btn-text">Integrity</p>
+          </div>
+        </button>
+        <button class="btn default-btn" (click)="itemTapped($event, question.suggestedAnswerList[3])" [class.selected]="question.suggestedAnswerList[3].name == answeredTopic">
+          <div class="btn-content">
+            <i id="uncertain-icon" class="btn-icon fa fa-inbox"></i>
+            <p class="btn-text">Not Sure</p>
+          </div>
+        </button>
+      </ion-row>
+    </ion-col>
+    <ion-col id="pg-content-main-right" class="pg-content-col" width-5 center>
+    </ion-col>
+  </ion-row> 
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <p *ngIf="question.text != ''" id="question-info-text" class="pg-content-info-p">{{question.text}}</p>
+    </ion-col>
+  </ion-row>
+</ion-footer>

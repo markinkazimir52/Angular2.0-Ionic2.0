@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "squibitapi-staging",
+  "private_key_id": "7b6e25f32e2fdfde24cfaf99be74b6c51e3eb6bb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDj+2nHllAHQ02x\nYWrYMlkDf44dsmmt41jmWxjonyFIvv3GWjeghVvogoygIoZxnh94HlYILlmadx+E\ngMVK/aqdfvU5GGl3+s+3krThUdjnsuP9EhAgCsAO0oSRDImH+K9mICPcYH4miNja\nGX5F+VGa6A0ZKupfabK9YKygx5DwDoaHvY4BOYxm81MrPaw/ZFdRl8VdChrSQ9FJ\n+nVs8QjiFOngfLt0Hx3LrsIHwEMtnNASSMvwy4Th/NV3sgclNcC0z4WxMXIogN5C\noIwL2v7yumYABTUP/Z429As6bO3ay9bnO8tTGv8V/qswpKj9jb9jA/wgu5mMJ8X2\nKEKJK6cPAgMBAAECggEBAM6s2NRK+/nZldE8UzPzUKbPN/LMDunItIsAArC/sdjU\n7BKpLsyimRNLZli1c9QEWNr4BV4dRrW1UCk646B8HfPxaDV+X/6YrT3qDXhGTrCd\nh/mgKmYh2MKXLf6gsv1FAR0//cKG51XfsVbmzYZ54vTfcSBju10L4TG1Nkn7IPW9\nPqLHyLOyEhLLojLfohXqJ3xoC2TKvdLJCzpz2GpG8a3jiAM7W5yIQARqOXivpe2I\niTiumzVHXZ6Joj57itphgqD2mtyaAHOu4W2MfCvhQLwlDs9rtx2DY3rmDB9c1K3S\nYyPg7vBiJDS1izYcQbK1AsK5ul+V/qS6o8fTwEhFSmECgYEA/y9zF0YjYXwWhB7u\ne2obbUwDFGp7isMlGG76iovNsL+ThhEsFSTHb2icg3w9yzBvvZgO2oO2sTaFJeed\n/XZ+ghdVNmuTHvPtIq1ry6xyDuCZuzn+BVK7PPh/L3g1i4RojzrIkj/Zr7bJnksH\nDyCQpPDnhOehitviK7HikVOAc+0CgYEA5LW7UxcCWzmawf1tWVAWVsRqRnrP6KSx\n+WM70OVzIMDX6+hB8+NCQUhuwbrIMU0AKWDWzfSuBXjvn/JmR71QEW4XhB6gu8Qv\n0DZDpx76KX5kzcblbaTpcKSJRQKfH/gUKh9BhUkGhFd+0ajloRtNBLIR/72J0grF\nNm13n4sHn2sCgYEAmjtZekWf+LmA+lWfmePls8dvTRWWmaWcdAoPT1Fz/lGrnioe\n1KCoEUPO5QFgb8BUqOiQga1969mh2+kDakAF8iacEAown1Kajoz2S+FsBmXlRG2m\nhB0eoZkndc9XvX1HnNnQg+Qnc7YsYYnDOHdcNPSNWZyN3FlNd09KOr+XMXkCgYEA\nlue6JAbojRyjGiCHSAjp1HJg1QQvrocMz0pEq37ZyeC0F3n2Gl/21XBfdAA0GyN9\nWdAFq3soX3/+TAD6r5cf/4AukARNddbq3W0QknKECWDWTlhQBVpslOBbmmcyazua\nwnhBGRqn7CZ3DQtuCDElTlXYPm/nQenNWi48Yc6wRuUCgYEA19HUGnhwOzwZjqHg\nUBwqZ9fHngSPoLUV5j5lGNBOstE4oxvwrunpkSv3ErHF77xXbD77zhqc16HMfNWB\n1KuE03eShdudOQEnitrpOONtudPv5Gxz4tAILfMM99Pac9L4iroPQtz7Dm5tco5c\ngk5Mjz5kA0Q2Rb6syZj5TzyfW+w=\n-----END PRIVATE KEY-----\n",
+  "client_email": "squibitapi-staging@squibitapi-staging.iam.gserviceaccount.com",
+  "client_id": "117729956054495278783",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/squibitapi-staging%40squibitapi-staging.iam.gserviceaccount.com"
+}

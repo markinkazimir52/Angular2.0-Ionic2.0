@@ -1,0 +1,99 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">    
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar>
+  <ion-title>
+  </ion-title>
+  <ion-buttons end>
+    <button (click)="saveTapped()">
+      Done
+      <i class="share-icon fa fa-paper-plane" name="share"></i>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content">
+  <ion-row id="pg-content-info" class="pg-content-row" center>
+    <ion-col id="pg-content-info" class="pg-content-col question-list-pg-content" center>
+      <!-- <p id="question-info-name" class="pg-content-info-p question-list-info-name">{{question.name}}</p>
+      <p id="question-about" *ngSwitchWhen="'light'" light class="pg-content-info-p">{{question.about.description}}</p> -->
+      <p id="question-info-name" class="pg-content-info-p question-list-info-name">Please explain your concern.</p>
+      <p id="question-about" class="pg-content-info-p">Answer only the questions you can.</p>
+
+
+      <!-- <p *ngIf="question.description != ''" id="question-info-description" class="pg-content-info-p">{{question.description}}</p>
+      <p *ngIf="question.text != ''" id="question-info-text" class="pg-content-info-p">{{question.text}}</p>
+      <span *ngIf="question.about.description != ''" id="question-info-about" [ngSwitch]="question.about.type">
+        <p id="question-about" *ngSwitchWhen="'danger'" danger class="pg-content-info-p">{{question.about.description}}</p>
+        <p id="question-about" *ngSwitchWhen="'dark'" dark class="pg-content-info-p">{{question.about.description}}</p>
+        <p id="question-about" *ngSwitchWhen="'light'" light class="pg-content-info-p">{{question.about.description}}</p>
+        <p id="question-about" *ngSwitchWhen="'secondary'" secondary class="pg-content-info-p">{{question.about.description}}</p>
+        <p id="question-about" *ngSwitchWhen="'primary'" primary class="pg-content-info-p">{{question.about.description}}</p>
+        <p id="question-about" *ngSwitchDefault class="pg-content-info-p">{{question.about.description}}</p>
+      </span> -->
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="question-list-pg-content-row" center>
+    <ion-col id="pg-content-main-center" class="pg-content-col question-list-pg-content-col" center>
+      <ion-row id="question-grid-logo" class="pg-content-row" center>
+        <img id="pg-bg-content-banner-people" class="pg-bg-content-banner" src="img/generic-company-logo-new-version.svg">
+      </ion-row>
+      <ion-row id="question-grid-progressbar" class="pg-content-row" center>
+        <div class="pg-content-progress-area">
+          <!-- <div class="meter nostripes" [class.dark-blue]="progress > 0 && progress <= 60" [class.gray]="progress > 60 && progress <= 80" [class.yellow]="progress > 80 && progress <= 100"> -->
+          <div class="meter yellow nostripes">
+            <span [style.width]="question.progress + '%'"></span>
+          </div>
+          <div class="progress-labels">
+            <span fab fab-left>basic</span>
+            <span fab-center>good</span>
+            <span fab-right>great</span>
+          </div>
+        </div>        
+      </ion-row>
+      <ion-row id="pg-content-main-center" class="pg-content-row question-button-list" center>
+        <button *ngFor="let item of question.suggestedAnswerList; let i=index" [id]="'button-question-' + item.headline | lowercase" sedate class="pg-content-main-center-question" (click)="itemTapped($event, item)" [class.question-answered]="item.isAnswered">
+          <div *ngIf="item.hasImage" [id]="'button-question-' + item.headline | lowercase" class="img-holder">
+            <img [id]="'button-question-' + item.headline | lowercase" [src]="item.image">
+            <span id="button-question-image-span" class="question-button-span">{{item.headline}}</span>
+          </div>          
+          <div *ngIf="!item.hasImage" [id]="'button-question-' + item.headline | lowercase">
+            <span [id]="'button-question-' + item.headline | lowercase" class="question-button-span">{{item.headline}}</span>
+          </div>
+        </button>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer question-footer">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <button id="pg-footer-help" fab fab-left fab-bottom (click)="helpTapped($event)">
+        <span class="pg-footer-help fa fa-fw fa-question-circle"></span>
+      </button>
+      <button id="button-trash" fab fab-right fab-bottom (click)="trashTapped($event)">
+        <span class="pg-footer-trash fa fa-fw fa-trash"></span>
+      </button>
+      <!--
+      <button id="button-submit" fab fab-right fab-bottom (click)="nextTapped($event)">
+        <span class="pg-footer-submit fa fa-fw fa-share"></span>
+      </button>
+      -->
+    </ion-col>
+  </ion-row>
+</ion-footer>

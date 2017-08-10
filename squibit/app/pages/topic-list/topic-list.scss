@@ -1,0 +1,10 @@
+.topic-list {
+	p#question-info-name {
+		font-size: 1.5rem;
+		color: #ffde2f;
+
+		@media screen and (min-width: 768px) {
+			font-size: 24px;
+		}
+	}
+}

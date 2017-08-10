@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "squibitapi",
+  "private_key_id": "5c9ba4e2b1e2a137b3d8df0e59a23b5ce1d4db1d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCysgsnq2MzdIOH\n8Z3gYNFFiWz6WitljCwmknalQVaB/1X2RMIij4mojgbAN3CNtws1R4EkxWsbKWbb\ncqx1WBq7n7OfO19Qx+wRGo50sOHxwfwLB9dkkGzF4Zsyre7TZ1szjqLxanPMNIs4\nt6H1MRnoCox3BG2xOSa6YknFVb8ABcGUc4/PFe0oqRKRbi14dQ5XNjtZHXSzb23v\nOz5t7XedhuEasKW+FdMF3N3AS0l+7LpvJi1fj51nr/KCQ82nvcc5xCnSEyn/Ybku\nV3m6z88o6SDB4QAbdmLqzjt5DtgXQ7yOzdnfZMrY+sL6t0vFqYQ5XpktdcB7WX5z\nRKikhWSLAgMBAAECggEBAIJRzEbS/BbDi0UyVXQUx6oRzjNKXUnCj1RWDkb4vpEx\n2MwwWvB/g+I0KgI2rFP9wSPLEQjzHOiDKisyl0lAxsY8cu/Wie3Mz4Gtv2SktzLr\nyNd2kYQau+kYXmn4ZSsxvlZ8WKL9gpPTYhEsAuZhN8Z9IvGNfj34MyFMmwZaQWBO\nmSRi368kmRzAZ5O3tPIcxTpgzvocBnKN/JBXMgaEba5bw1pTC+P63CGzjZ5CGdhY\nqkw11LdCq9RCqmVs11s6NdXyGQbyKiX+QeOibXQUNy3IFu7ZFWoDD2t71nX5uWfX\nct+FmK4LJpasFOYA/E7g3RgYfCwW38HnPEula818T5kCgYEA6fT5btyJdDw9egXr\nzU0+aF1gMV9aj2lycAi4uy+7peeU3cFXd7NiTQket96c8jAe6hx+FcukAmX32co8\nKe27ZcwDFfJLPo8FbuwEAUsTU138SQ0YiI/wSpZAC0qxhBJ6MZAbKhdI0qsDzgJt\nyJHtvRhP+Smpx08fBFf8qbFFd00CgYEAw4gqsL16VxjhIXnM1Yj293ANguXYz269\nf6h/NhaavEw43dbJ46/QJteI7U4QvqipjzrDCiIcCozVUmY+n0ky+4PrJprFQHUI\nyDSfiJPOhvn5ALKU4qGVX73g54ktl3SoZ9ZAMPWUOqEvEMSkqa0shVVr80CqG1oX\n+1+60IXoTzcCgYBY//M/hC/aAuyUFdqNIBxkkVj9jzuhIMkC655yvwbQZxePgHRo\nudnkWlrQMaRc0YeBIdOpMO20Z9vwgul+PcyzPffSinirVLcJaklfwJKafT9y/sNd\nd/w+M4grg3+iMXFAl4Rt76upUJtC7FOdID5jV/NcYsgOZP/0pBAe8avuZQKBgB+T\n5hEVCKT4R6N4YDQ8ImZjmksBg7o8UC5FsAW0MNkoFib9gS1cP2mGdX6dlOa1pmyT\nONxyFcU+aVUdXg+raqhj7Z4WcLSwMfLjTMBp3ni99hC+xnyzS8RijefWp55GIMxk\nNYmyn3W4gjlbCJy+cuo1mXF3iAFS03ytQSZb+eCRAoGBAOO8vcQNoss5OUIgNQHw\nHKSW39xCwVFKTukgtGnmtsZi2Gd+S18Jpxpjpqqh3pac1ak+9h89PMXYdoCSBpwL\niRZbcTj0RCT/o2v5BnPsgz7/N5N8Ux9v1CAWPVPh3W16MnQQbB/ypFjmQbvR6tPh\ndbAy0k9v53deA8mGOoQYdkLD\n-----END PRIVATE KEY-----\n",
+  "client_email": "squibit-api-account@squibitapi.iam.gserviceaccount.com",
+  "client_id": "100284950867673902386",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/squibit-api-account%40squibitapi.iam.gserviceaccount.com"
+}

@@ -1,0 +1,54 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title id="nav">
+  </ion-title>
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content pg-content-home">
+  <ion-row id="pg-content-info" class="pg-content-row" center>
+    <ion-col id="pg-content-info" class="pg-content-col" center>
+      <p id="pg-content-info-tagline" class="pg-content-p">Neighborhood Watch for Corporations<sup>&reg;</sup></p>
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="pg-content-row" center>
+    <ion-col id="pg-content-main-left" class="pg-content-col" width-25 center>
+    </ion-col>
+    <ion-col id="pg-content-main-center" class="pg-content-col" width-50 center>
+      <ion-button id="pg-content-main-get-started-now" class="pg-content-button" clear (click)="navToTopicListPage($event)">
+        <img id="pg-content-main-get-started-now" class="pg-content-img" src="img/get-started-button-new-version.svg">
+      </ion-button>
+    </ion-col>
+    <ion-col id="pg-content-main-right" class="pg-content-col" width-25 center>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <!-- <p id="pg-footer-status" class="pg-footer-p" (click)="navToUpdateConcernModal($event)">Update concern</p> -->
+      <button outline id="pg-footer-status" class="pg-footer-p" (click)="navToSelectConcern($event)">Update <br>Concern</button>
+      <img id="pg-footer-logo" class="pg-footer-img" src="img/generic-company-logo-new-version.svg" (click)="navToAboutModal($event)">
+    </ion-col>
+  </ion-row>
+</ion-footer>

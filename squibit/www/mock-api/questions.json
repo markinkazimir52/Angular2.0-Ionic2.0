@@ -1,0 +1,1241 @@
+[
+  {
+    "about": {
+      "description": "Please call 911 if this is an emergency.",
+      "id": "3f4d0019-a76f-45f6-9140-483edd3373b8",
+      "name": "Emergency Instructions",
+      "shortId": "4kr8Q95mshl",
+      "type": "danger"
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 4,
+    "headline": "Concerned about?",
+    "id": "78a9f190-c318-4b60-ad37-3b37162514e2",
+    "isSingleChoice": false,
+    "name": "What type of issue would you like to discuss?",
+    "shortId": "41IL7cqXs3l",
+    "suggestedAnswerList": [
+      {
+        "icon": "fa-shield",
+        "id": "e16c87fe-cd37-475d-8c23-91b6d204704a",
+        "name": "Security",
+        "shortId": "EkELQ957i3e",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-lock",
+        "id": "4063dd66-6087-471d-bd09-8fae131301e5",
+        "name": "Safety",
+        "shortId": "E1QIQqcQo3e",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-balance-scale",
+        "id": "f23a9d89-ffde-4fba-8adb-5cc56949a9a1",
+        "name": "Integrity",
+        "shortId": "VyGUQqqXong",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-inbox",
+        "id": "afbdbb62-6719-4bb8-ace6-32ecc94f8aad",
+        "name": "Not Sure",
+        "shortId": "Vy-8m5c7o3l",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "For use reporting the types of workplace issues listed above. General complaints and all other use prohibited.",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Please provide as many detailed answers as possible; if you can't complete every question, submit once you have finished all the questions you can answer.",
+      "id": "b0df84aa-fda9-4406-8e22-018a3a50fc7a",
+      "name": "",
+      "shortId": "NyyIXqcQjhg",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 10,
+    "headline": "Please elaborate",
+    "id": "d71685e8-e4ed-493a-86f3-b88ccb5a71b0",
+    "isSingleChoice": false,
+    "name": "Tell us about your concern.",
+    "shortId": "N1x8mc9mi3e",
+    "suggestedAnswerList": [
+      {
+        "headline": "What happened?",
+        "id": "7998d9d4-7939-4660-9f1f-16084cdd15c5",
+        "name": "What happened?",
+        "shortId": "Nk0Bmc5Qihe",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "headline": "When?",
+        "id": "d65e8869-0e33-4ac7-87cc-410c089c5987",
+        "name": "When did the issue happen?",
+        "shortId": "4JpH7q5Qinl",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "headline": "Where?",
+        "id": "a063dfb9-d1e0-4d32-ab08-759019295983",
+        "name": "Where did the issue happen?",
+        "shortId": "V12rmq9Qonl",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "headline": "How do you know?",
+        "id": "3554ad3f-7916-437b-94c8-2d2ee7597168",
+        "name": "How do you know about the issue?",
+        "shortId": "N1jrX5qmo3g",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "headline": "Who?",
+        "id": "67a2d436-201a-44d2-afdf-8287683a14d4",
+        "name": "Who was involved?",
+        "shortId": "V15SXc5Xinx",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "headline": "What else?",
+        "id": "b4206bb9-32de-44fb-a2dd-d32ff3a08648",
+        "name": "What else?",
+        "shortId": "N1Kr795Qj2e",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "headline": "How often?",
+        "id": "abb9f359-5e23-47f7-84ac-64cdd8a08e3d",
+        "name": "How often has this happened?",
+        "shortId": "VJuSX597o3x",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "headline": "How long?",
+        "id": "d2905c5c-de26-4e1e-8549-de286a6f672d",
+        "name": "How long has this been going on?",
+        "shortId": "NJwSQc97o3x",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "headline": "Who else knows?",
+        "id": "c9a16ba6-2788-4168-916c-e2acb03eface",
+        "name": "Who else knows about the issue?",
+        "shortId": "VJLr795Xjhl",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "headline": "Who should know?",
+        "id": "884e395f-6ac1-4a1a-ba8f-acd55a3725f8",
+        "name": "Who should know about the issue?",
+        "shortId": "NJSSX55Qi3g",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Tell us what happened in as much detail as possible. You can also submit a photo or audio recording along with your description of the issue.",
+      "id": "50eccd2d-92ee-406c-9473-5e6466134d0b",
+      "name": "Media Instructions",
+      "shortId": "N1Xr7997shl",
+      "type": "secondary"
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 5,
+    "headline": "What happened?",
+    "id": "8eb8bd74-3fba-4ce1-b277-f513dce41bdb",
+    "isSingleChoice": false,
+    "name": "What happened?",
+    "shortId": "Vy4rX9qQo3e",
+    "suggestedAnswerList": [
+      {
+        "icon": "fa-camera",
+        "id": "1a21d2d4-664e-4ed7-9d3d-3e486c6f749d",
+        "images": [],
+        "name": "Add images",
+        "shortId": "NkzHmqq7j3l",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "hasImages": true,
+          "isButton": true
+        }
+      },
+      {
+        "audio": "",
+        "icon": "fa-microphone",
+        "id": "cc2a4017-dcdd-4d9b-9847-9887b86bbc86",
+        "name": "Add audio",
+        "shortId": "Ey-rQqq7s3l",
+        "type": "primary",
+        "uiHelper": {
+          "hasAudio": true,
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-video-camera",
+        "id": "aa9d2560-9e87-460b-a39a-1c0da1932a22",
+        "name": "Add video",
+        "shortId": "VJxHQ5qXi2x",
+        "type": "primary",
+        "uiHelper": {
+          "hasVideo": true,
+          "hasIcon": true,
+          "isButton": true
+        },
+        "video": ""
+      },
+      {
+        "file": "",
+        "icon": "fa-file",
+        "id": "82858f49-2e92-4cb7-8ff9-e6dbd0314d3f",
+        "name": "Add file",
+        "shortId": "4JyB7qcQj3l",
+        "type": "primary",
+        "uiHelper": {
+          "hasFile": true,
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-sticky-note",
+        "id": "73d49d43-8e74-44f9-9fd5-c794bd826a44",
+        "name": "Type your notes here...",
+        "shortId": "41A4Q55Xine",
+        "textarea": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "hasTextArea": true
+        }
+      }
+    ],
+    "text": "Tell us what happened in as much detail as you can.",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "When did this issue occur?  If you are unsure of the exact date and time, please provide us with your best estimate of the date and time when it happened.",
+      "id": "0dbc91f5-6d19-48dc-8681-1abf5d9a2cee",
+      "name": "Datetime Instructions",
+      "shortId": "41h4755mshl",
+      "type": "secondary"
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 2,
+    "headline": "When?",
+    "id": "3fcd82f3-af11-4616-9574-f3d43ad0eb90",
+    "isSingleChoice": false,
+    "name": "When did the issue happen?",
+    "shortId": "N16Emcq7i2x",
+    "suggestedAnswerList": [
+      {
+        "date": "",
+        "icon": "fa-calendar-o",
+        "id": "e5ce03be-c154-46bb-bc9a-2a858f323ad2",
+        "name": "Date:",
+        "shortId": "VJsEQqqQo3e",
+        "type": "primary",
+        "uiHelper": {
+          "hasDate": true,
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-clock-o",
+        "id": "5f8ede38-c217-4192-bbf1-f2759f3898be",
+        "name": "Time:",
+        "shortId": "Nk9EQ59ms2l",
+        "time": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "hasTime": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "Tell us what happened in as much detail as you can.",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Choose where this issue has occurred. Selecting 'current location' will automatically include your mobile device's current location.",
+      "id": "7528f459-806e-46ef-bc51-68faa5399050",
+      "name": "Location Instructions",
+      "shortId": "41uEXcc7o3x",
+      "type": "secondary"
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 6,
+    "headline": "Where?",
+    "id": "e15e7bcd-cbfa-43cc-b92e-b738722e15b9",
+    "isSingleChoice": true,
+    "name": "Where did the issue happen?",
+    "shortId": "Nyt4Q5qmi3e",
+    "suggestedAnswerList": [
+      {
+        "geopoint": {
+          "lat": 0,
+          "lng": 0
+        },
+        "icon": "fa-map-marker",
+        "id": "29699aa0-3c45-40db-b09d-9af7e8bd8e62",
+        "name": "Current location",
+        "shortId": "VJwVQ99Xo3e",
+        "type": "primary",
+        "uiHelper": {
+          "hasGeoPoint": true,
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-briefcase",
+        "id": "6a424a29-d7a4-48c5-aeb1-fbce6df82c30",
+        "name": "Office",
+        "shortId": "VJ84mcc7ine",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-archive",
+        "id": "25358346-5808-4b68-8efd-3113244871a5",
+        "name": "Warehouse",
+        "shortId": "VyrEQc97inl",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-car",
+        "id": "eafaef41-5f18-4fa4-be09-db00b43eaaac",
+        "name": "Parking lot",
+        "shortId": "NyVNmc97ihg",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-question",
+        "id": "394e7ac9-600e-4e90-8691-101ff0fe3727",
+        "name": "I don't know",
+        "shortId": "417Nm957j3l",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "edit",
+        "id": "811a0212-3c3f-47be-a171-fec5465d254f",
+        "name": "Other",
+        "hasOptionalInput": true,
+        "placeholder": "Please describe.",
+        "shortId": "VJf4755Xjne",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Making multiple choices is possible, if given the opportunity to enter text please further describe how you know of this issue.",
+      "id": "446b7e55-5102-4f09-8727-f506537052b1",
+      "name": "",
+      "shortId": "VylVQ99Xjng",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 7,
+    "headline": "How do you know?",
+    "id": "f69879e4-f97a-4769-a1d6-b34632e5c1b0",
+    "isSingleChoice": false,
+    "name": "How do you know about the issue?",
+    "shortId": "VJbN75qQj2l",
+    "suggestedAnswerList": [
+      {
+        "icon": "fa-user",
+        "id": "04d0a1be-c383-491b-bd44-055fbb4b4d2e",
+        "name": "I was there",
+        "shortId": "4J1VQ557jhe",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-eye",
+        "id": "e6484806-d13e-40c2-bf01-0c22d828259a",
+        "name": "I witnessed it",
+        "shortId": "E1A7X55mihl",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-comment",
+        "id": "6bb94cc4-b366-40c6-b4f4-dd4503ece2b2",
+        "name": "Someone who was there told me",
+        "hasOptionalInput": true,
+        "placeholder": "Who told you? (optional)",
+        "shortId": "4167m99Xj2e",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-headphones",
+        "id": "d5b870ec-023b-402c-aa68-26a3ae0645bf",
+        "name": "I overheard it",
+        "shortId": "NJ2m7qqQinx",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-volume-up",
+        "id": "5732ca8a-cc6b-48e6-a793-019e67667e27",
+        "name": "Someone who heard about it told me",
+        "hasOptionalInput": true,
+        "placeholder": "Who told you? (optional)",
+        "shortId": "Nyo779c7jnx",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-soundcloud",
+        "id": "b8db2518-5e09-434a-9376-0daf4e96094d",
+        "name": "Hearsay or rumor",
+        "shortId": "4yqmQc9msne",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "isButton": true
+        }
+      },
+      {
+        "icon": "fa-bullhorn",
+        "id": "2d4aa668-68bf-4dd5-b89c-4245e0685996",
+        "name": "Other",
+        "hasOptionalInput": true,
+        "placeholder": "Please elaborate.",
+        "shortId": "VJt7QccQj2e",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Please make multiple selections if necessary.  If you know that person's name or have other details to share, you can include that in the optional text box associated with that answer.",
+      "id": "df0cd60f-3f40-4065-919f-7d010b1f622f",
+      "name": "",
+      "shortId": "4yDmmqqmjnl",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 8,
+    "headline": "Who?",
+    "id": "8a4c6006-cc35-4260-85a7-d1b98cbcf17a",
+    "isSingleChoice": false,
+    "name": "Who was involved?",
+    "shortId": "NJ_QXcq7ihx",
+    "suggestedAnswerList": [
+      {
+        "id": "bf736df9-3cff-41e1-86d5-7e9272e6686f",
+        "name": "I was",
+        "shortId": "4k877c5mshg",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "a814a591-f102-4ebe-b7a5-90d96567c7bd",
+        "name": "A coworker",
+        "hasOptionalInput": true,
+        "placeholder": "Coworker's name? (optional)",
+        "shortId": "4yHX7qqmo3e",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "227423db-7947-4c10-8e75-10ae97e861cf",
+        "name": "My supervisor",
+        "hasOptionalInput": true,
+        "placeholder": "Supervisor's name? (optional)",
+        "shortId": "E147Q9qmihx",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "b109c18d-aec5-4eea-a802-4e133a056f54",
+        "name": "A manager",
+        "hasOptionalInput": true,
+        "placeholder": "Manager's name? (optional)",
+        "shortId": "NJ7mX9c7shx",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "a6c05ac5-ec69-4619-a749-6c57f240be33",
+        "name": "A contractor",
+        "hasOptionalInput": true,
+        "placeholder": "Contractor's name? (optional)",
+        "shortId": "N1MQm5cQohx",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "412ac3ab-cb3c-4708-91ec-ebc43b716667",
+        "name": "I don't know",
+        "shortId": "E1-XXccQohx",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "e9035b92-1c4d-429a-b4a4-ff0e9adae8bd",
+        "name": "I don't want to say",
+        "shortId": "4Jl7Xc9mj3e",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "95f358ba-3369-4b0d-91f8-ea4a0db69d1a",
+        "name": "Other",
+        "hasOptionalInput": true,
+        "placeholder": "Please elaborate.",
+        "shortId": "E1JXQcqQihe",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Is there anything else we should know regarding your report? Type in the text box to enter any additional descriptions or info that could prove useful.",
+      "id": "59fd6ca2-2620-4e89-ba6a-420c678a8ab5",
+      "name": "",
+      "shortId": "EkafmqqXonx",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 1,
+    "headline": "What else?",
+    "id": "ff2dcec6-7425-477d-8228-f7bff798c0c8",
+    "isSingleChoice": true,
+    "name": "What else?",
+    "shortId": "NJAzX95mihe",
+    "suggestedAnswerList": [
+      {
+        "icon": "fa-pencil",
+        "id": "840be23c-3d45-42d3-b63d-765ab3facda6",
+        "name": "Type your notes here...",
+        "shortId": "4J2z7q5mjng",
+        "textarea": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasIcon": true,
+          "hasTextArea": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "What else do you think we should know about the issue?",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Please select the option which best describes how often you have witnessed or been aware of this concern.",
+      "id": "8689e7a4-cec7-43df-98f0-a9b18f1e98e6",
+      "name": "",
+      "shortId": "V1qzmq97jhx",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 6,
+    "headline": "How often?",
+    "id": "3693edb5-20ce-4876-8956-f82b4cb43d23",
+    "isSingleChoice": true,
+    "name": "How often has this happened?",
+    "shortId": "EJsMX5qms2e",
+    "suggestedAnswerList": [
+      {
+        "id": "82a9e954-8490-44a2-b0a6-0c0d2d551872",
+        "name": "Not sure",
+        "shortId": "VJFGQc57snx",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "5df8f1f9-d0cc-4d20-bbca-cb478285a7f9",
+        "name": "Once",
+        "shortId": "41dG79cXi2e",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "a45fb357-3e80-4d73-8874-db47dd6d86d0",
+        "name": "Twice",
+        "shortId": "VkDzQ5cmo2e",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "daa0c9d9-0536-4aaa-b0e4-ec599b3d9001",
+        "name": "Several times",
+        "shortId": "4kLzX99Xjhl",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "d329b54c-9519-40c9-ba6d-c7e9e7102eec",
+        "name": "Often",
+        "shortId": "4kSzQ5qXj2x",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "e7512de6-692f-43ec-8f36-e6701e56dbbf",
+        "name": "Other",
+        "hasOptionalInput": true,
+        "placeholder": "Please describe.",
+        "shortId": "NJNfX9cQj3x",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Enter your best answer of how long this concern has been occuring, as you have been aware of it.",
+      "id": "31afc92d-d2af-40ce-8bc6-4605a58f985e",
+      "name": "",
+      "shortId": "NkfMmc9minl",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 8,
+    "headline": "How long?",
+    "id": "8cd66198-2e08-4ce5-9e93-2f38f4deb9b4",
+    "isSingleChoice": true,
+    "name": "How long has this been going on?",
+    "shortId": "NyQzXc9ms3g",
+    "suggestedAnswerList": [
+      {
+        "id": "145886df-ff42-4d99-8003-1017b501b347",
+        "name": "Just once",
+        "shortId": "Ey-GX5qXsnx",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "3cfa3ce8-19a2-4a7e-86b6-fa4731e4c60e",
+        "name": "A week",
+        "shortId": "EJgMXq9Xi2l",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "43874139-eeda-4872-937d-9cb412e6ad34",
+        "name": "A few weeks",
+        "shortId": "41JGQ55Xs3l",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "0401626b-2159-40ef-abdb-086fc28393c1",
+        "name": "A month",
+        "shortId": "NyAb7q9Xjhx",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "be7649c9-6e97-428a-98f6-7fe8eb062771",
+        "name": "A few months",
+        "shortId": "Nka-m5qQi3g",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "84cc8af8-8459-408a-828a-be35d10a581c",
+        "name": "A year",
+        "shortId": "41hWmq5mo2l",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "0fe370f7-46ad-489f-98b9-3b7b35a33053",
+        "name": "More than a year",
+        "shortId": "EkoWX99Xo3l",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "257d8f59-0df7-46a9-aa4a-ed6ea6e12d6a",
+        "name": "Other",
+        "hasOptionalInput": true,
+        "placeholder": "Please describe.",
+        "shortId": "419bX99Xs3x",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Please list anybody else who also knows of this issue; multiple selections are possible, and after selecting the corresponding check box you can also enter a specific individual's name.",
+      "id": "b6be4c02-3c36-4825-b32c-5194ebdbae08",
+      "name": "",
+      "shortId": "NkOZm9qXjnx",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 5,
+    "headline": "Who else knows?",
+    "id": "6cfa74d9-939a-41da-95c4-3511e1f18a8d",
+    "isSingleChoice": false,
+    "name": "Who else knows about the issue?",
+    "shortId": "NJtZQc9Qohg",
+    "suggestedAnswerList": [
+      {
+        "id": "8a460411-acfc-4123-b959-b6b8da2e4029",
+        "name": "No one",
+        "shortId": "VJwbXq97s3l",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "2e20f2be-baa5-4f94-adb6-d8269ee2c1d6",
+        "name": "A coworker",
+        "hasOptionalInput": true,
+        "placeholder": "Coworker's name? (optional)",
+        "shortId": "Nk8ZQqq7o3l",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "ba08e302-710e-4695-8170-0e09efcfdcab",
+        "name": "My supervisor",
+        "hasOptionalInput": true,
+        "placeholder": "Supervisor's name? (optional)",
+        "shortId": "VkB-X95mi2e",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "6b1cdb7d-6952-439c-a239-257cdaf19d91",
+        "name": "A manager",
+        "hasOptionalInput": true,
+        "placeholder": "Manager's name? (optional)",
+        "shortId": "VyN-7cqminl",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "cce73b0f-0e0f-42ce-ad97-7cf39f70a8de",
+        "name": "Other",
+        "hasOptionalInput": true,
+        "placeholder": "Name? (optional)",
+        "shortId": "Eym-Xqc7j3e",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "Select who you believe should be notified of this issue; multiple selections are possible, also you can enter an individual's name after selecting the corresponding check box.",
+      "id": "6e742637-e9d6-47bc-8341-efd96cca5c4a",
+      "name": "",
+      "shortId": "VJWZmc97ong",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 8,
+    "headline": "Who should know?",
+    "id": "a3238b92-3245-4ddb-aff6-e7e7687fd90b",
+    "isSingleChoice": false,
+    "name": "Who should know about the issue?",
+    "shortId": "4yfZQccXong",
+    "suggestedAnswerList": [
+      {
+        "id": "ab70e62e-095b-47f5-b234-250e999a8785",
+        "name": "My manager",
+        "hasOptionalInput": true,
+        "placeholder": "Manager's Name? (optional)",
+        "shortId": "VkebX59Xjhe",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "7ea0cc5e-9740-43fd-8489-ca9b54ea4bfa",
+        "name": "Senior manager",
+        "hasOptionalInput": true,
+        "placeholder": "Senior manager's name? (optional)",
+        "shortId": "VyJZmq9Xshx",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "45a98b4b-5803-43ca-a543-9926d3f12fba",
+        "name": "Human Resources (HR)",
+        "hasOptionalInput": true,
+        "placeholder": "HR rep's name? (optional)",
+        "shortId": "EyCxXq9Qjnl",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "1df5eb81-120c-49c6-a338-c9085c5a558e",
+        "name": "Security",
+        "hasOptionalInput": true,
+        "placeholder": "Security rep's name? (optional)",
+        "shortId": "VJaem5cmine",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "5a0da06d-dd26-4faf-8100-773a9dd26caa",
+        "name": "Safety",
+        "hasOptionalInput": true,
+        "placeholder": "Safety rep's name? (optional)",
+        "shortId": "412eQ5cQi3g",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "813429c5-e1f6-461c-ac7a-fab25fd0bd93",
+        "name": "Ethics",
+        "hasOptionalInput": true,
+        "placeholder": "Ethics rep's name? (optional)",
+        "shortId": "Nyjl79qmj3x",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "3f8fbd09-bec4-411f-bccb-52e44beeae45",
+        "name": "Not sure",
+        "hasOptionalInput": true,
+        "placeholder": "",
+        "shortId": "VJ9eQqcXs2e",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      },
+      {
+        "id": "4079e610-6e8b-42f9-becf-323c603768cf",
+        "name": "Other",
+        "hasOptionalInput": true,
+        "placeholder": "Tell more... (optional)",
+        "shortId": "VJKl7c9mjhg",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "I want to submit this report anonymously",
+      "id": "d876033b-8815-4f04-944c-449a0dabf4fd",
+      "name": "",
+      "shortId": "VJwx7cc7i3x",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 1,
+    "headline": "Personal Info",
+    "id": "9fdb23fd-a64e-42a4-82e5-4ba85d20b8b5",
+    "isSingleChoice": false,
+    "name": "You're almost there, thank you!",
+    "shortId": "VJOe7q5msnx",
+    "suggestedAnswerList": [
+      {
+        "id": "3f02f322-16b3-45e4-803e-12f1483d9f78",
+        "name": "No",
+        "hasOptionalInput": true,
+        "placeholder": "Senior manager's name? (optional)",
+        "shortId": "EJHeXq9Qo2l",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "We just need some final details before submitting your report.",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "",
+      "id": "0a2a49e3-1c71-431d-9f90-6136eced5ba5",
+      "name": "",
+      "shortId": "EkQem5cXing",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 1,
+    "headline": "Your Affiliation",
+    "id": "f0826531-132e-450b-b9d0-274e2f38d156",
+    "isSingleChoice": true,
+    "name": "Your affiliation",
+    "shortId": "Vy4g7q5mshg",
+    "suggestedAnswerList": [
+      {
+        "id": "a704f498-64bf-4751-a549-efd3977175e7",
+        "name": "Your affiliation",
+        "shortId": "NyMxXcq7shx",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "11e4ee37-fc00-4202-85ff-619b7609a01e",
+        "name": "Employee",
+        "shortId": "EJWeQ55Xohx",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "e4dd3e55-cb34-4124-be99-ee713c7ed477",
+        "name": "Contractor",
+        "shortId": "4yxlQq9mj2e",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "3c7d736a-d753-45f4-949e-caae63dc7e57",
+        "name": "Vendor",
+        "shortId": "EkJeXqqXjhl",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      },
+      {
+        "id": "80ebce2f-7862-45b3-a9fe-9b90c03e039b",
+        "name": "Visitor",
+        "shortId": "4kCm9qXi3l",
+        "type": "primary",
+        "uiHelper": {
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "",
+      "id": "d1c73a4c-c036-4a57-917a-2325fdb62f78",
+      "name": "",
+      "shortId": "4khmc97onl",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 1,
+    "headline": "",
+    "id": "854fc9c2-1a3e-4364-90d7-e2d69ae8c729",
+    "isSingleChoice": true,
+    "name": "Your name",
+    "shortId": "NJ6X957shl",
+    "suggestedAnswerList": [
+      {
+        "id": "f94e71c1-1e0e-40fb-b8b6-fbaa4ba6e808",
+        "name": "Your name",
+        "hasOptionalInput": true,
+        "placeholder": "Enter your name...",
+        "shortId": "Eyom59Xinx",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "",
+      "id": "6102c7b2-6e01-49ad-8e76-1b4c1c9e92fa",
+      "name": "",
+      "shortId": "Nktmc9mjnl",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 1,
+    "headline": "",
+    "id": "4c5ebf0a-2103-40a5-b50a-ef249280aa75",
+    "isSingleChoice": true,
+    "name": "Your phone",
+    "shortId": "V15QcqXsnl",
+    "suggestedAnswerList": [
+      {
+        "id": "3a74d3a6-1bc5-4a12-b364-08fd4bdd24fc",
+        "name": "Your phone",
+        "hasOptionalInput": true,
+        "placeholder": "Enter your phone number...",
+        "shortId": "4y_m59Qi3g",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  },
+  {
+    "about": {
+      "description": "",
+      "id": "46ddcd1c-7c2e-419c-bf13-9b6c7d360e83",
+      "name": "",
+      "shortId": "41Im597ine",
+      "type": ""
+    },
+    "acceptedAnswerList": [],
+    "answerCount": 1,
+    "headline": "",
+    "id": "68ca97ba-deeb-4f1b-a28d-563145a33d11",
+    "isSingleChoice": true,
+    "name": "Your email",
+    "shortId": "N1DmqqXi2e",
+    "suggestedAnswerList": [
+      {
+        "id": "a75d1ffc-8281-449e-b046-312e860ee4e3",
+        "name": "Your email",
+        "hasOptionalInput": true,
+        "placeholder": "Enter your email address...",
+        "shortId": "NJS7qqmonl",
+        "text": "",
+        "type": "primary",
+        "uiHelper": {
+          "hasText": true,
+          "isButton": true
+        }
+      }
+    ],
+    "text": "",
+    "type": "primary"
+  }
+]

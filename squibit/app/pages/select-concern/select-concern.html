@@ -1,0 +1,68 @@
+<!-- <div class="pg-bg">
+  <div class="pg-bg-header">
+  </div>
+  <div class="pg-bg-content">
+  </div>
+  <div class="pg-bg-footer">
+  </div>
+  <div class="pg-bg-separator-scallop-both">
+  </div>
+  <div class="pg-bg-separator-scallop-top">
+  </div>
+</div> -->
+
+<ion-navbar hideBackButton class="navbar-about">
+  <button (click)="goBack()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </button>
+  <ion-title>
+  </ion-title>  
+</ion-navbar>
+
+<ion-header id="pg-header" class="pg-header">
+  <img id="pg-header-logo" class="pg-header-img" src="img/header-logo-squibit-blue-base.svg">
+</ion-header>
+
+<ion-content id="pg-content" class="pg-content pg-content-select-concern">
+  <ion-row id="pg-content-info" class="pg-content-row" center>
+    <ion-col id="pg-content-info" class="pg-content-col" center>
+      <p id="pg-content-select-concern-title" class="pg-content-p">{{quote.title}}</p>
+      <p id="pg-content-select-concern-description" class="pg-content-p">{{quote.description}}</p>
+    </ion-col>
+  </ion-row>
+  <ion-row id="pg-content-main" class="pg-content-row" center>
+    <ion-col id="pg-content-main" class="pg-content-col pg-content-card" center>
+      <ion-card>
+        <ion-card-content class="page select-concern main" hasHeader="true" scroll="true">
+          <ion-list>
+            <ion-label class="select-concern-select-label">Enter your squibit ID number to proceed:</ion-label>
+            <ion-item>
+                <ion-input placeholder="Example: 123abc" clearInput [(ngModel)]="inputTipID"></ion-input>
+            </ion-item>
+          </ion-list>
+          <ion-list>
+            <ion-label class="select-concern-select-label">Or, select your concern from a list of stored squibit IDs:</ion-label>
+            <ion-item>
+              <ion-select [(ngModel)]="inputTipID" [alertOptions]="alertOptions">
+                <ion-option *ngFor="let idPair of storedTipIDPairs" [value]="idPair.tip_id">{{idPair.tip_id}}</ion-option>
+                <ion-option *ngIf="storedTipIDPairs.length == 0" value="placeholder" placeholder disabled>none found</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+          <button full class="disable-hover button button-default button-full update-concern-button" (click)="navToUpdateConcern()">Update this concern</button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer id="pg-footer" class="pg-footer pg-footer-select-concern">
+  <ion-row id="pg-footer" class="pg-footer-row" center>
+    <ion-col id="pg-footer" class="pg-footer-col" center>
+      <button id="button-help" fab fab-left fab-bottom (click)="helpTapped($event)">
+        <span class="pg-footer-help fa fa-fw fa-question-circle"></span>
+      </button>
+      <img id="pg-footer-logo" class="pg-footer-img" src="img/generic-company-logo-new-version.svg" (click)="navToAboutModal($event)" center>
+    </ion-col>
+  </ion-row>
+</ion-footer>
